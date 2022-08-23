@@ -1,0 +1,8 @@
+import requests
+
+variavel = '11111111111'
+
+codeHttp = requests.get(f'https://api.postmon.com.br/v1/cep/{variavel}')
+
+print(codeHttp.status_code)
+#return (codeHttp.status_code)
